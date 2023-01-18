@@ -2,7 +2,7 @@
 
 Let's do our first Python kata. This one comes straight off the JavaScript course, so you should have done this already. The logic you employ will be the same, we just need to change to Python syntax.
 
-For practice, let's set up our repo properly. First of all, ensure that you have installed `flake8`, `pytest` and can use `make` as described in `README.md`. 
+For practice, let's set up our repo properly. First of all, ensure that you have installed `flake8`, `pytest` and can use `make` as described in `README.md`.
 
 ## Sentence to upper or lower CamelCase
 
@@ -19,12 +19,15 @@ To help you on your way we have created the test folder, and your very first Pyt
 To run your tests for each kata, in your terminal you will run the following command from the root directory of the project:
 
 ```bash
-make unit-test <path to test file>
+make unit-test test_run=test/<path to test file>
 ```
 
+<!-- make unit-test test_run=test/test_sentence_to_camel_case.py -->
+
 For example, to test `sentence_to_camel_case`, run:
+
 ```bash
-make unit-test test/test_sentence_to_camel_case.py
+make unit-test test_run=test/test_sentence_to_camel_case.py
 ```
 
 To run **all** your test files in your test folder run the following command:
@@ -63,10 +66,10 @@ camel_to_english("thisBiggerStrangeSentence")
 
 Note that there are already some changes from the JavaScript example.
 
--   Following PEP8, our function names are in `snake_case` rather than `CamelCase`
--   There is no semicolon following the function invocation.
--   The boolean keywords begin with capital letters (ie `True` and `False`).
--   The comments are indicated by a hash `#` rather than the double slash `//` of JavaScript.
+- Following PEP8, our function names are in `snake_case` rather than `CamelCase`
+- There is no semicolon following the function invocation.
+- The boolean keywords begin with capital letters (ie `True` and `False`).
+- The comments are indicated by a hash `#` rather than the double slash `//` of JavaScript.
 
 So, set up a code file in `src/sentence_to_camel_case`, and a test file in `test`, and get coding! The purpose of this is to get to grips with Python syntax, so don't worry too much about the logic of how you do this - if you have a working JavaScript version, by all means just try to translate it.
 
