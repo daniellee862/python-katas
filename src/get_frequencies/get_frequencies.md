@@ -18,3 +18,11 @@ get_frequencies('hello world')
 # }
 
 ```
+
+#new_dictionary = { key:value | for (key,value) in iterable | if condition }
+
+#words = ['this','poker','quest']
+
+#dict = { word:len(word) for word in words }
+
+#{'this': 4, 'poker': 5, 'quest': 5}
