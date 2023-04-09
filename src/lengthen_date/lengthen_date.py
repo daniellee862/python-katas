@@ -5,7 +5,7 @@ def lengthen_date(date_string):
     # Parse input to datetime object
     date_obj = datetime.strptime(date_string, '%d.%m.%Y')
 
-    # day
+    # day -
     day_name = date_obj.strftime("%A")
 
     # day number
